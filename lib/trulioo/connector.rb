@@ -33,7 +33,9 @@ module Trulioo
       params = {
         headers: {
           'Content-Type' => 'application/json'
-        }
+        },
+        read_timeout: 180,
+        open_timeout: 180
       }
       params.merge!(auth_params) if options[:auth]
       params[:body] = params_body(options[:body]) if options[:body]
