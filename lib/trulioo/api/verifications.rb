@@ -32,6 +32,11 @@ module Trulioo
         Result.new(get(action, auth: true))
       end
 
+      def transaction_status(transaction_id)
+        action = "transaction/#{transaction_id}/status"
+        StatusResult.new(get(action, auth: true))
+      end
+
       def verify(data)
         Result.new(post('verify', auth: true, body: data))
       end

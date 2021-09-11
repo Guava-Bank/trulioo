@@ -6,6 +6,7 @@ require 'trulioo/api/connection'
 require 'trulioo/api/verifications'
 require 'trulioo/api/verifications/datasource'
 require 'trulioo/api/verifications/transaction_record'
+require 'trulioo/api/verifications/status_result'
 require 'trulioo/api/verifications/result'
 
 module Trulioo

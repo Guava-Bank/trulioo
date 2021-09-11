@@ -10,6 +10,7 @@ module Trulioo
 
         def initialize(record)
           @id = record['TransactionRecordID']
+          @transaction_id = record['TransactionID']
           @datasources = parse_datasources(record['DatasourceResults'])
           @status = record['RecordStatus']
           @errors = record['Errors']
